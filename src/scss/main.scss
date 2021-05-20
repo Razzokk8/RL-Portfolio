@@ -1,2 +1,78 @@
-// This is where you can import other stylesheets or write your scss code
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Oswald:wght@400;600&display=swap");
+
+:root {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  background-color: #f8f9fa;
+}
+:not(.navbar-branda) {
+  font-size: 100%;
+  font-family: Oswald;
+  font-weight: 600;
+  z-index: 99;
+}
+.nav-item :hover {
+  color: gray;
+}
+.navbar-brand :hover {
+  color: gray;
+}
+section {
+  height: 88.5vh;
+  background-color: #f8f9fa;
+  border: solid 2px red;
+}
+// ? index---
+.abtme {
+  font-family: Oswald;
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+  border: solid 2px red;
+  min-height: 400px;
+  z-index: 0;
+
+  @include media-breakpoint-up(md) {
+    font-size: 3.5rem;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 4rem;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 5rem;
+  }
+  @include media-breakpoint-up(xxl) {
+    font-size: 5.5rem;
+  }
+}
+// ? profile----
+.prfl {
+  font-size: 0.9rem;
+  p {
+    font-family: Comfortaa;
+    font-weight: 300;
+    text-align: left;
+  }
+  h5 {
+    font-size: 1.25rem;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 0.92rem;
+    h5 {
+      font-size: 1.5rem;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 0.95rem;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 1rem;
+  }
+  @include media-breakpoint-up(xxl) {
+    font-size: 1rem;
+    h5 {
+      font-size: 1.8rem;
+    }
+  }
+}
