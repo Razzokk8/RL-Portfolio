@@ -19,7 +19,7 @@
   color: gray;
 }
 section {
-  height: 88.5vh;
+  height: 90vh;
   background-color: #f8f9fa;
   border: solid 2px red;
 }
@@ -47,10 +47,20 @@ section {
   }
 }
 // ? profile----
+
+.profile-card-image {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  border: solid 18px black;
+  margin-top: 7vh;
+}
+
 .prfl {
   font-size: 0.9rem;
   p {
     font-family: Comfortaa;
+    letter-spacing: 0.01rem;
     font-weight: 300;
     text-align: left;
   }
@@ -75,4 +85,27 @@ section {
       font-size: 1.8rem;
     }
   }
+}
+// ? profile fine tuning page classes
+.card-text {
+  margin-left: 1vw;
+}
+.list-group {
+  margin-left: 1vw;
+}
+.li-ico {
+  padding-right: 1rem;
+}
+.text-muted {
+  font-size: 0.65rem;
+  font-family: Comfortaa;
+  letter-spacing: 0.01rem;
+}
+.typografy-li {
+  font-family: Comfortaa;
+  letter-spacing: 0.01rem;
+  font-weight: 700;
+}
+.pl {
+  color: gray;
 }
