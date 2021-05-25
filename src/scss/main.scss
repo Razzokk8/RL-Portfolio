@@ -23,11 +23,36 @@
 .navbar-brand :hover {
   color: gray;
 }
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 section {
   height: 87vh;
-  background-color: #f8f9fa;
-  border: solid 2px red;
+  background-color: rgb(237, 237, 237);
+  // ? overflow: auto;
+
+  // ? border: solid 2px red;
   // min-height: calc(100vh - 62px - 52.5px);
+}
+.card {
+  min-width: 250px;
+}
+.rel-earl {
+  max-width: 150px;
+  @include media-breakpoint-up(md) {
+    max-width: 180px;
+  }
+  @include media-breakpoint-up(lg) {
+    max-width: 200px;
+  }
 }
 
 // ? index---
@@ -36,10 +61,11 @@ section {
   font-weight: 600;
   font-size: 3rem;
   text-align: center;
-  border: solid 2px red;
+  // ? border: solid 2px red;
   min-height: 400px;
   position: relative;
-  top: 62px;
+  top: 50px;
+  overflow: auto;
 
   @include media-breakpoint-up(md) {
     font-size: 3.5rem;
@@ -130,9 +156,21 @@ section {
   list-style-type: none;
 }
 .cvc {
-  background-image: url(https://www.google.com/maps/vt/data=SnuQIqL2YDVTW0wpIGnB9n_2Q8lYScZ6HIp04lrmLux67BbsMm41Kk80o40u2Yautr6t1C1G8gchEu-6w76lACaDN3_adOwYFthEPRp4x4ntXB2VP1LJmKo9JlZjGOmc5z8MzT8YC3o3dBZ6RJ-uBSWML7G1PNnQSFNefi6nsNjLxUpOCJjQjPFbVZhykpw4hjt8bexO6fdzpZ-5VBqd5qkRynsDGihrUYzFAXzPxmYCcQ);
-  background-size: cover;
+  background-image: url(/images/cme9.png);
+  background-position: center;
+  background-size: 60%;
   background-repeat: no-repeat;
+}
+.cmcloud {
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    44% 100%,
+    50% 75%,
+    0 75%
+  );
 }
 /// ? Portfolio page
 .carousel-caption {
@@ -186,7 +224,3 @@ section {
     font-size: 1.1rem;
   }
 }
-// .imgm {
-//   max-width: 350px;
-//   max-height: 350px;
-// }
