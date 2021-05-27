@@ -116,10 +116,9 @@
           class="
             abtme
             d-block
-            position-absolute
+            container-fluid
             d-flex
             justify-content-around
-            container-fluid
             cvc
             rounded
           "
@@ -135,22 +134,25 @@
                 submitted, i will get in touch with you as soon as possible to
                 provide you with a quote and to get started on your project.
               </p>
-              <p class="card-text">Have a question? Please enquire below.</p>
+              <p class="card-text mb-5">Have a question? Please enquire below.</p>
 
               <form action="" method="post">
                 <ul class="form-list container">
                   <li>
-                    <label for="name" class="ftxt text-start p-2"
-                      >NAME * :</label
+                    <label for="name" class="ftxt text-start p-2"  
+                      >FULL NAME * :</label
                     >
                     <input
                       type="text"
                       class="ftxt text-muted"
                       id="name"
                       name="user_name"
-                      placeholder="Riccardo Limiti"
+                      placeholder="Name, Surname"
+                      required
+                      data-bs-toggle="tooltip" title="your name here"
                     />
                   </li>
+                  
                   <li>
                     <label for="mail" class="ftxt text-start p-2"
                       >E-MAIL * :</label
@@ -161,7 +163,10 @@
                       id="mail"
                       name="user_email"
                       placeholder="riccardo.limiti@gmail.com"
+                      required
+                      data-bs-toggle="tooltip" title="your @mail here"
                     />
+                    
                   </li>
                   <li>
                     <label for="msg" class="ftxt text-start p-2"
@@ -172,6 +177,8 @@
                       id="msg"
                       name="user_message "
                       placeholder="Write your message . . ."
+                      required
+                      data-bs-toggle="tooltip" title="Tell me about what i cn do for you?"
                     ></textarea>
                   </li>
                   <li class="text-start d-inline-block" style="width: 70%">
@@ -187,7 +194,7 @@
                     >
                       <input
                         type="checkbox"
-                        class="form-check-input p-2 bg-danger border-danger"
+                        class="form-check-input p-2 bg-success border-success"
                         id="exampleCheck1"
                       />
                       <label
@@ -200,18 +207,19 @@
                 </ul>
               </form>
 
-              <a href="#" class="btn btn-success">SUBMIT!</a>
+              <a href="#" class="btn btn-success" type="submit">SUBMIT!</a>
             </div>
+            <img src="./images/k-board.png"  style="max-height: 100px;" class="img-fluid rounded border" alt="deco-banner">
             
             
           
         </div> 
-        <div class="w-50 bg-dark d-none d-lg-block rounded cmcloud " style="max-height: 260px; max-width:300px;">
-  <div class="card-body d-flex flex-wrap ">
+        <div class="w-50 bg-dark d-none d-lg-block rounded cmcloud " >
+  <div class="card-body d-flex flex-wrap align-content-start strb h-100">
     <h5 class="card-title ftxt text-light text-uppercase p-2">Can I drop you a line?</h5>
-      <p class="card-text ftxt text-light text-uppercase">
+      <p class="card-title ftxt text-light text-uppercase">
       drop a line  </p>
-      <p class="card-text ftxt text-light text-uppercase ">
+      <p class="card-title ftxt text-light text-uppercase ">
       Correspond, write a short letter or note. For example, I hope you'll drop me a line soon.</p>
 
   </div>

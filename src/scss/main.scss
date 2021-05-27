@@ -15,7 +15,6 @@
   font-size: 100%;
   font-family: Oswald;
   font-weight: 600;
-  z-index: 99;
 }
 .nav-item :hover {
   color: gray;
@@ -29,18 +28,13 @@ body {
   flex-direction: column;
   background-color: #f8f9fa;
 }
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-section {
-  height: 87vh;
-  background-color: rgb(237, 237, 237);
-  // ? overflow: auto;
 
-  // ? border: solid 2px red;
-  // min-height: calc(100vh - 62px - 52.5px);
+section {
+  // ? height: auto; ?
+  background-color: rgb(237, 237, 237);
+  padding: 30px 0px;
+  //border: solid 2px red;
+  min-height: calc(100vh - 62px - 52.5px);
 }
 .card {
   min-width: 250px;
@@ -54,18 +48,17 @@ section {
     max-width: 200px;
   }
 }
-
+.cbdy {
+  background-color: rgb(237, 237, 237);
+}
 // ? index---
 .abtme {
   font-family: Oswald;
   font-weight: 600;
   font-size: 3rem;
   text-align: center;
-  // ? border: solid 2px red;
+  //border: solid 2px red;
   min-height: 400px;
-  position: relative;
-  top: 50px;
-  overflow: auto;
 
   @include media-breakpoint-up(md) {
     font-size: 3.5rem;
@@ -80,6 +73,7 @@ section {
     font-size: 5.5rem;
   }
 }
+
 // ? profile----
 
 .profile-card-image {
@@ -156,7 +150,7 @@ section {
   list-style-type: none;
 }
 .cvc {
-  background-image: url(/images/cme9.png);
+  background-image: url(../images/cme9.png);
   background-position: center;
   background-size: 60%;
   background-repeat: no-repeat;
@@ -171,6 +165,8 @@ section {
     50% 75%,
     0 75%
   );
+  max-height: 250px;
+  max-width: 300px;
 }
 /// ? Portfolio page
 .carousel-caption {
@@ -202,6 +198,40 @@ section {
     }
   }
 }
+// ? ---------------------
+// ? animations & fancy stuff
+.scl2:hover {
+  position: relative;
+  transition: transform 2s;
+  transition-timing-function: ease-in-out;
+  transform: translateY(100px) scale(1.85);
+  transform-origin: bottom;
+  z-index: 100;
+}
+
+.strb:hover {
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    44% 100%,
+    50% 75%,
+    0 75%
+  );
+  animation: first 0.1s infinite alternate;
+  animation-name: strobe;
+}
+@keyframes strobe {
+  from,
+  to {
+    background-color: greenyellow;
+  }
+  50% {
+    background-color: transparent;
+  }
+}
+// ? ----////----////----////
 .ct {
   font-family: Comfortaa;
   font-weight: 700;
@@ -209,18 +239,18 @@ section {
     font-size: 0.9rem;
   }
   @include media-breakpoint-up(sm) {
-    font-size: 0.92rem;
+    font-size: 0.91rem;
   }
   @include media-breakpoint-up(md) {
     font-size: 0.92rem;
   }
   @include media-breakpoint-up(lg) {
-    font-size: 0.95rem;
+    font-size: 0.94rem;
   }
   @include media-breakpoint-up(xl) {
-    font-size: 1rem;
+    font-size: 0.98rem;
   }
   @include media-breakpoint-up(xxl) {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
