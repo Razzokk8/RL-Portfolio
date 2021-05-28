@@ -127,10 +127,10 @@
           <!-- form start -->
           <div class="card prfl" style="max-width: 1140px">
             <div class="card-body" style="max-width: 708.35px">
-              <h5 class="card-title flicker-in-1">CONTACT ME</h5>
-              <p class="card-text p-2">
+              
+              <p class="card-text p-1">
                 Music producer, techno remixer , jr Freelance Web Designer &
-                Developer based in Berlin, Germany. Please fill out the project
+                Developer based in Berlin, Germany.</p> <p class="card-text p-1"> Please fill out the project
                 planner to get a quote based on your project requirements. Once
                 submitted, i will get in touch with you as soon as possible to
                 provide you with a quote and to get started on your project.
@@ -138,14 +138,16 @@
               <p class="card-text mb-5">Have a question? Please enquire below.</p>
 
               <form action="" method="post">
-                <ul class="form-list container">
-                  <li>
+                <ul class="form-list container list-group">
+
+                  <li class="list-group-item active bg-dark border-dark ftxt text-uppercase card-title" aria-current="true"><h5>contact me</h5></li>
+                  <li class="list-group-item">
                     <label for="name" class="ftxt text-start p-2"  
                       >FULL NAME * :</label
                     >
                     <input
                       type="text"
-                      class="ftxt text-muted"
+                      class="ftxt text-muted p-1"
                       id="name"
                       name="user_name"
                       placeholder="Name, Surname"
@@ -154,13 +156,13 @@
                     />
                   </li>
                   
-                  <li>
+                  <li class="list-group-item rounded">
                     <label for="mail" class="ftxt text-start p-2"
                       >E-MAIL * :</label
                     >
                     <input
                       type="email"
-                      class="ftxt text-muted"
+                      class="ftxt text-muted p-1"
                       id="mail"
                       name="user_email"
                       placeholder="riccardo.limiti@gmail.com"
@@ -169,12 +171,12 @@
                     />
                     
                   </li>
-                  <li>
+                  <li class="list-group-item rounded">
                     <label for="msg" class="ftxt text-start p-2"
                       >MESSAGE * :</label
                     >
                     <textarea
-                      class="ftxt text-muted"
+                      class="ftxt text-muted p-2"
                       id="msg"
                       name="user_message "
                       placeholder="Write your message . . ."
@@ -182,7 +184,7 @@
                       data-bs-toggle="tooltip" title="Tell me about what i cn do for you?"
                     ></textarea>
                   </li>
-                  <li class="text-start d-inline-block" style="width: 70%">
+                  <li class="text-start d-flex justify-content-center list-group-item rounded w-100" style="width: 70%">
                     <div
                       class="
                         mb-3
@@ -190,37 +192,37 @@
                         p-2
                         d-flex
                         justify-content-center
-                        align-middle
+
+                        list-group-item rounded w-100
+                        
                       "
                     >
                       <input
                         type="checkbox"
-                        class="form-check-input p-2 bg-success border-success"
+                        class="form-check-input p-2 mg-5 bg-success border-light"
                         id="exampleCheck1"
                       />
                       <label
-                        class="form-check-label text-muted p-2"
+                        class="form-check-label text-muted mg-5 p-1"
                         for="exampleCheck1"
                         >I agree to terms and privacy conditions</label
                       >
-                    </div>
+                      
                   </li>
+                  
                 </ul>
               </form>
 
-              <a href="#" class="btn btn-success" type="submit">SUBMIT!</a>
+              <div class="p-4"> 
+                <a href="#" class="btn btn-success flicker-in-1" type="submit">SUBMIT!</a></div>
             </div>
-            <img src="./images/k-board.png"  style="max-height: 100px;" class="img-fluid rounded border" alt="deco-banner">
-            
-            
-          
         </div> 
         <div class="w-50 bg-dark d-none d-lg-block rounded cmcloud bounce-in-right" >
   <div class="card-body d-flex flex-wrap align-content-start strb h-100">
-    <h5 class="card-title ftxt text-light text-uppercase p-2">Can I drop you a line?</h5>
-      <p class="card-title ftxt text-light text-uppercase">
+    <h5 class="card-title ftxt2 text-light text-uppercase p-2">Can I drop you a line?</h5>
+      <p class="card-title ftxt2 text-light text-uppercase">
       drop a line  </p>
-      <p class="card-title ftxt text-light text-uppercase ">
+      <p class="card-title ftxt2 text-light text-uppercase ">
       Correspond, write a short letter or note. For example, I hope you'll drop me a line soon.</p>
 
   </div>
