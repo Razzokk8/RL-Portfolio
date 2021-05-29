@@ -35,8 +35,11 @@ section {
   padding: 30px 0px;
   //border: solid 2px red;
   min-height: calc(100vh - 62px - 52.5px);
+  z-index: 1;
 }
-footer {z-index: 0;}
+footer {
+  z-index: 0;
+}
 .card {
   min-width: 250px;
   word-spacing: 0.1vw;
@@ -56,9 +59,9 @@ footer {z-index: 0;}
   min-width: 120px;
   padding: 0.75vh 0;
 }
-
-
-
+.titlel {
+  background-color: #ededed;
+}
 .cbdy {
   background-color: rgb(237, 237, 237);
 }
@@ -218,6 +221,17 @@ footer {z-index: 0;}
 }
 // ? ---------------------
 // ? animations & fancy stuff
+.minihov:hover {
+  transition: transform 0.3s;
+  transition-timing-function: ease-in;
+  transform: scale(1.1);
+  transform-origin: center;
+  z-index: 100;
+}
+.minihovtxt:hover {
+  color: gray;
+  text-shadow: 1px 3px rgba(0, 0, 0, 0.077);
+}
 .scl2:hover {
   position: relative;
   transition: transform 2s;
@@ -235,7 +249,9 @@ footer {z-index: 0;}
   transform-origin: bottom left;
   z-index: 100;
 }
-
+.formhov:hover {
+  border: 2px solid gray;
+}
 .strb:hover {
   clip-path: polygon(
     0% 0%,
