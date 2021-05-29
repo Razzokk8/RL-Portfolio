@@ -36,9 +36,10 @@ section {
   //border: solid 2px red;
   min-height: calc(100vh - 62px - 52.5px);
 }
+footer {z-index: 0;}
 .card {
   min-width: 250px;
-  word-spacing: 0.5vw;
+  word-spacing: 0.1vw;
 }
 .rel-earl {
   margin: auto 0;
@@ -50,6 +51,14 @@ section {
     max-width: 200px;
   }
 }
+.mini-rel {
+  max-width: 25vw;
+  min-width: 120px;
+  padding: 0.75vh 0;
+}
+
+
+
 .cbdy {
   background-color: rgb(237, 237, 237);
 }
@@ -213,8 +222,17 @@ section {
   position: relative;
   transition: transform 2s;
   transition-timing-function: ease-in-out;
-  transform: translateY(100px) scale(1.85);
-  transform-origin: bottom;
+  transform: translateY(100px) scale(2.001);
+  transform-origin: bottom right;
+  z-index: 100;
+}
+
+.scl21:hover {
+  position: relative;
+  transition: transform 2s;
+  transition-timing-function: ease-in-out;
+  transform: translateY(100px) scale(2.001);
+  transform-origin: bottom left;
   z-index: 100;
 }
 
