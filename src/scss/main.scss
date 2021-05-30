@@ -9,7 +9,6 @@
 :root {
   font-size: 62.5%;
   background-color: #f8f9fa;
-  margin: auto;
 }
 :not(.navbar-branda) {
   font-size: 100%;
@@ -23,7 +22,7 @@
   color: gray;
 }
 body {
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   background-color: #f8f9fa;
@@ -59,17 +58,36 @@ footer {
   min-width: 120px;
   padding: 0.75vh 0;
 }
-.titlel {
-  background-color: #ededed;
-}
+
 .cbdy {
   background-color: rgb(237, 237, 237);
+}
+#pcontainerform {
+  padding-right: 2vw;
+}
+input:valid + span::before {
+  content: "✔";
+  color: green;
+}
+
+input:invalid + span::before {
+  content: "✖";
+  color: red;
+}
+textarea:valid + span::before {
+  content: "✔";
+  color: green;
+}
+
+textarea:invalid + span::before {
+  content: "✖";
+  color: red;
 }
 // ? index & structure ---
 .abtme {
   font-family: Oswald;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   //border: solid 2px red;
   min-height: 400px;
@@ -89,6 +107,9 @@ footer {
 }
 
 // ? profile----
+.list-group-flush > li {
+  min-width: 155px;
+}
 
 .profile-card-image {
   width: 240px;
@@ -150,9 +171,7 @@ footer {
   letter-spacing: 0.01rem;
   font-weight: 700;
 }
-.pl {
-  color: green;
-}
+
 .ll {
   margin-right: 10px;
 }
@@ -170,10 +189,19 @@ footer {
   list-style-type: none;
   padding-right: 2vw;
 }
+textarea {
+  padding-left: 6px;
+}
+label > h5 {
+  margin: 0;
+}
+.mmm {
+  margin: 0;
+}
 .cvc {
   background-image: url(../images/cme9.png);
   background-position: center;
-  background-size: 60%;
+  background-size: 62%;
   background-repeat: no-repeat;
 }
 .cmcloud {

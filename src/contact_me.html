@@ -125,66 +125,69 @@
           "
         >
           <!-- form start -->
-          <div class="card prfl" style="max-width: 1140px">
-            <div class="card-body" style="max-width: 708.35px">
+          <div class="card prfl p-2" style="max-width: 1140px">
+            <div class="card-body row justify-content-center" style="max-width: 708.35px">
+              <div id="pcontainerform" class="row justify-content-center">
               
-              <p class="card-text p-1">
+              <p class="card-text mt-2">
                 Music producer, techno remixer , jr Freelance Web Designer &
-                Developer based in Berlin, Germany.</p> <p class="card-text p-1"> Please fill out the project
+                Developer based in Berlin, Germany.</p> <p class="card-text"> Please fill out the project
                 planner to get a quote based on your project requirements. Once
                 submitted, i will get in touch with you as soon as possible to
                 provide you with a quote and to get started on your project.
               </p>
-              <p class="card-text mb-5">Have a question? Please enquire below.</p>
+              <p class="card-text mb-5">Have a question? Please enquire below.</p></div>
 
-              <form action="" method="post" class="needs-validation" novalidate>
+              <form action="" method="POST" class="needs-validation d-flex justify-content-center" novalidate>
                 <ul class="form-list container list-group">
 
-                  <li class="list-group-item active bg-dark border-dark ftxt text-uppercase card-title" aria-current="true"><h5>contact me</h5></li>
-                  <li class="list-group-item">
-                    <label for="name" class="ftxt text-start p-2"  
-                      >FULL NAME * :</label
+                  <li class="list-group-item active bg-dark border-dark ftxt text-uppercase card-title mmm " aria-current="true"><h5>contact me</h5></li>
+                  <li class="list-group-item text-end cbdy">
+                    <label for="name" class="ftxt text-start rounded"  
+                      ><h5>FULL NAME :</h5></label
                     >
                     <input
                       type="text"
-                      class="ftxt text-muted p-1 formhov rounded"
+                      class="ftxt text-muted"
                       id="name"
-                      name="user_name"
+                      name="name"
                       placeholder="Name, Surname"
                       required
-                      data-bs-toggle="tooltip" title="your name here"
-                    />
+                      data-bs-toggle="tooltip" title="your complete name here"
+                    /> 
+                    <span></span>
                   </li>
                   
-                  <li class="list-group-item rounded">
-                    <label for="mail" class="ftxt text-start p-2"
-                      >E-MAIL * :</label
+                  <li class="list-group-item rounded text-end cbdy">
+                    <label for="mail" class="ftxt text-start rounded"
+                      ><h5>E-MAIL :</h5></label
                     >
                     <input
                       type="email"
-                      class="ftxt text-muted p-1 formhov rounded"
+                      class="ftxt text-muted"
                       id="mail"
                       name="user_email"
                       placeholder="riccardo.limiti@gmail.com"
                       required
                       data-bs-toggle="tooltip" title="your @mail here"
                     />
-                    
+                    <span></span>
                   </li>
-                  <li class="list-group-item rounded">
-                    <label for="msg" class="ftxt text-start p-2"
-                      >MESSAGE * :</label
+                  <li class="list-group-item rounded text-end cbdy">
+                    <label for="msg" class="ftxt text-start rounded"
+                      ><h5>MESSAGE :</h5></label
                     >
                     <textarea
-                      class="ftxt text-muted p-2 formhov rounded"
+                      class="ftxt text-muted"
                       id="msg"
                       name="user_message "
                       placeholder="Write your message . . ."
                       required
                       data-bs-toggle="tooltip" title="Tell me about what i cn do for you?"
                     ></textarea>
+                    <span></span>
                   </li>
-                  <li class="text-start d-flex justify-content-center list-group-item rounded w-100" style="width: 70%">
+                  <li class="text-start d-flex justify-content-center list-group-item rounded w-100 cbdy" style="width: 70%">
                     <div
                       class="
                         mb-3
@@ -193,20 +196,24 @@
                         d-flex
                         justify-content-center
 
-                        list-group-item rounded w-100
-                        
+                        list-group-item
+                        rounded
+                        w-100
+                      
                       "
-                    >
-                      <input
-                        type="checkbox"
-                        class="form-check-input p-2 mg-5 bg-warning border-light"
-                        id="exampleCheck1"
-                      />
+                    ><div class="d-flex justify-content-center w-100 p-2 col">
+                      
                       <label
-                        class="form-check-label text-muted mg-5 p-1"
+                        class="form-check-label text-muted mg-5"
                         for="exampleCheck1"
-                        >I agree to terms and privacy conditions</label
+                        ><input
+                        type="checkbox"
+                        required
+                        class="form-check-input p-2 mg-5 mx-2 bg-warning border-warning"
+                        id="exampleCheck1"
+                      />I agree terms and privacy conditions</label
                       >
+                    </div>
                       
                   </li>
                   
