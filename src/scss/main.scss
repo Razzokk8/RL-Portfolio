@@ -5,7 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  background-color: #f8f9fa;
+}
 :root {
   font-size: 62.5%;
   background-color: #f8f9fa;
@@ -21,18 +23,33 @@
 .navbar-brand :hover {
   color: gray;
 }
-body {
-  min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  background-color: #f8f9fa;
+// ? -------cover try
+.cover {
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    65% 35%,
+    100% 35%,
+    100% 60%,
+    0% 0%,
+    0% 100%,
+    100% 100%,
+    100% 0%,
+    0% 60%,
+    0% 35%,
+    35% 35%
+  );
+  top: 15%;
+  position: absolute;
+  z-index: 106;
 }
-
+// ? ----- :::::cover end
 section {
   // ? height: auto; ?
   background-color: rgb(237, 237, 237);
-  padding: 30px 0px;
+  padding: 20px 0px;
   //border: solid 2px red;
+
   min-height: calc(100vh - 62px - 52.5px);
   z-index: 1;
 }
@@ -87,7 +104,7 @@ textarea:invalid + span::before {
 .abtme {
   font-family: Oswald;
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   text-align: center;
   //border: solid 2px red;
   min-height: 400px;
@@ -105,10 +122,15 @@ textarea:invalid + span::before {
     font-size: 5.5rem;
   }
 }
+// ? buy button style
+
+.bbtnrelease {
+  min-width: 65px;
+}
 
 // ? profile----
 .list-group-flush > li {
-  min-width: 155px;
+  min-width: 200px;
 }
 
 .profile-card-image {
@@ -175,7 +197,7 @@ textarea:invalid + span::before {
 .ll {
   margin-right: 10px;
 }
-// ?  -----
+// ?  ----- fit text
 .ftxt {
   font-size: 1.1rem;
   letter-spacing: 0.04vw;
@@ -204,6 +226,7 @@ label > h5 {
   background-size: 62%;
   background-repeat: no-repeat;
 }
+// ? comic cloud form
 .cmcloud {
   clip-path: polygon(
     0% 0%,
@@ -250,12 +273,13 @@ label > h5 {
 // ? ---------------------
 // ? animations & fancy stuff
 .minihov:hover {
-  transition: transform 0.3s;
+  transition: transform 0.2s;
   transition-timing-function: ease-in;
   transform: scale(1.1);
   transform-origin: center;
   z-index: 100;
 }
+
 .minihovtxt:hover {
   color: gray;
   text-shadow: 1px 3px rgba(0, 0, 0, 0.077);
